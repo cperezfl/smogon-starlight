@@ -2,6 +2,7 @@
 
 ![Smogon Starlight](https://github.com/user/repo/blob/main/images/smogon_banner.png?raw=true)
 
+
 Este es un dashboard interactivo creado con Streamlit para analizar el metajuego y los resultados del torneo de Splatoon 3 "Smogon Starlight", organizado por **Narval Carnaval**.
 
 La aplicación permite a jugadores y organizadores explorar en detalle:
@@ -45,23 +46,6 @@ Sigue estos pasos para configurar el entorno y ejecutar la aplicación localment
     ```bash
     pip install -r requirements.txt
     ```
-
-4.  **Prepara los datos y los assets:**
-    Este repositorio no incluye los archivos de datos, imágenes o videos para mantenerlo ligero. Deberás crearlos y poblarlos manualmente.
-
-    Crea las siguientes carpetas en la raíz del proyecto:
-    *   `data/`
-    *   `images/`
-    *   `videos/`
-
-    Coloca los archivos necesarios dentro de estas carpetas. Por ejemplo:
-    *   `data/datos.xlsx`
-    *   `data/participants.xlsx`
-    *   `data/weapons.xlsx`
-    *   `images/smogon_banner.png`
-    *   `images/narval_logo.png`
-    *   `videos/fondo.mp4`
-    *   ... y todas las demás imágenes de armas, mapas, etc.
 
 ## ▶️ Cómo Ejecutar la Aplicación
 
