@@ -1,0 +1,36 @@
+# .gitignore
+
+# Entornos virtuales de Python
+venv/
+.venv/
+env/
+.env/
+ENV/
+
+# Archivos de caché de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Archivos de configuración de IDEs y editores
+.idea/
+.vscode/
+*.swp
+.DS_Store
+
+# Archivos de distribución y compilación
+/build/
+/dist/
+*.egg-info/
+
+# Archivos de configuración de Streamlit
+.streamlit/
+
+# Ficheros de datos y assets grandes
+/data/
+/images/
+/videos/
+
+# Logs y otros archivos temporales
+*.log
