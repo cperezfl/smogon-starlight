@@ -27,10 +27,5 @@ __pycache__/
 # Archivos de configuración de Streamlit
 .streamlit/
 
-# Ficheros de datos y assets grandes
-/data/
-/images/
-/videos/
-
 # Logs y otros archivos temporales
 *.log
