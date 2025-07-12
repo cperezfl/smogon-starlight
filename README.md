@@ -1,6 +1,6 @@
 # Smogon Starlight - Dashboard de Torneo
 
-![Smogon Starlight](https://github.com/user/repo/blob/main/images/smogon_banner.png?raw=true)
+![Smogon Starlight]([https://github.com/user/repo/blob/main/images/smogon_banner.png?raw=true](https://github.com/cperezfl/smogon-starlight/blob/main/images/smogon_banner.png))
 
 
 Este es un dashboard interactivo creado con Streamlit para analizar el metajuego y los resultados del torneo de Splatoon 3 "Smogon Starlight", organizado por **Narval Carnaval**.
