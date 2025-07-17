@@ -1,71 +1,43 @@
-# Smogon Starlight - Dashboard de Torneo
+# Smogon Starlight - Análisis de Torneo de Splatoon 3
 
-![Smogon Starlight](https://github.com/cperezfl/smogon-starlight/blob/main/images/smogon_banner.png?raw=true)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://smogon-starlight.streamlit.app/)
 
+Este repositorio contiene el código para una aplicación web desarrollada en Streamlit que visualiza y analiza los datos del torneo de Splatoon 3 **"Smogon Starlight"**. La aplicación permite explorar de manera interactiva las estadísticas de uso de armas, el rendimiento de los jugadores y las tendencias generales del torneo.
 
-Este es un dashboard interactivo creado con Streamlit para analizar el metajuego y los resultados del torneo de Splatoon 3 "Smogon Starlight", organizado por **Narval Carnaval**.
+**➡️ Accede a la aplicación en vivo aquí: [https://smogon-starlight.streamlit.app/](https://smogon-starlight.streamlit.app/)**
 
-La aplicación permite a jugadores y organizadores explorar en detalle:
-*   Uso general de armas y clases.
-*   Estadísticas detalladas por arma, sub-arma y especial.
-*   Información sobre los equipos participantes, su origen y su progreso en el torneo.
-*   Resultados de la fase suiza y los brackets finales.
+---
 
-## 🚀 Requisitos Previos
+## 🖼️ Vista Previa de la Aplicación
 
-Asegúrate de tener instalado **Python 3.8** o una versión superior.
+A continuación, se muestran algunas capturas de pantalla de la interfaz y las visualizaciones que ofrece la aplicación.
 
-- [Python](https://www.python.org/downloads/)
-- `pip` (generalmente se instala con Python)
+**Interfaz principal de la aplicación:**
+![Interfaz de la aplicación en Streamlit Cloud](images/Github-Images/cloud-interface.png)
 
-## ⚙️ Instalación
+**Ejemplo de visualización de datos:**
+![Ejemplo de un gráfico generado](images/Github-Images/graphs.png)
 
-Sigue estos pasos para configurar el entorno y ejecutar la aplicación localmente.
+---
 
-1.  **Clona el repositorio:**
-    ```bash
-    git clone https://github.com/tu-usuario/tu-repositorio.git
-    cd tu-repositorio
-    ```
+## 📄 Documentación y Características
 
-2.  **Crea y activa un entorno virtual** (recomendado):
+El objetivo de este proyecto es proporcionar una herramienta visual para que los organizadores, participantes y la comunidad de Splatoon 3 puedan analizar los datos de un torneo de manera sencilla e intuitiva.
 
-    *   **En Windows:**
-        ```bash
-        python -m venv venv
-        .\venv\Scripts\activate
-        ```
-    *   **En macOS / Linux:**
-        ```bash
-        python3 -m venv venv
-        source venv/bin/activate
-        ```
+### Características Principales
+- **Dashboard Interactivo:** Toda la información se presenta en una interfaz amigable y fácil de navegar.
+- **Filtros Dinámicos:** Los usuarios pueden filtrar los datos por jugador, país, arma, clase de arma y más.
+- **Estadísticas Detalladas:** Cálculo de estadísticas clave como K/D Ratio, Winrate, popularidad de armas y especiales.
+- **Visualizaciones Claras:** Uso de gráficos de barras y tablas para presentar la información de forma efectiva.
 
-3.  **Instala las dependencias:**
-    Usa el archivo `requirements.txt` para instalar todas las librerías necesarias.
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-## ▶️ Cómo Ejecutar la Aplicación
-
-Una vez que hayas instalado las dependencias y preparado los datos, ejecuta el siguiente comando desde la carpeta raíz del proyecto:
-
-```bash
-streamlit run 0_Bienvenida.py
+### Estructura del Repositorio
 ```
-
-Se abrirá una nueva pestaña en tu navegador con la aplicación funcionando.
-
-## 📂 Estructura del Proyecto
-
-```
-.
 ├── 0_Bienvenida.py         # Página principal de bienvenida
-├── 1_Tourney.py            # Página: Torneo General
-├── 2_Weapon_Stats.py       # Página: Estadísticas de Armas
-├── 3_Team_Stats.py         # Página: Estadísticas de Equipos
-├── 4_About_Us.py           # Página: Sobre Nosotros
+├── pages/ # Páginas desplegables
+│   ├── 1_Tourney.py            # Torneo General
+│   ├── 2_Weapon_Stats.py       # Estadísticas de Armas
+│   ├── 3_Team_Stats.py         # PEstadísticas de Equipos
+│   ├── 4_About_Us.py           # Sobre Nosotros
 ├── utils/                  # Módulos de utilidad
 │   ├── __init__.py
 │   ├── data_loader.py      # Lógica para cargar datos
@@ -79,3 +51,62 @@ Se abrirá una nueva pestaña en tu navegador con la aplicación funcionando.
 └── README.md               # Este archivo
 └── LICENSE.md              # Licencia del programa
 ```
+---
+
+## 📊 Fuentes de Datos
+
+La información utilizada en esta aplicación se recopiló de diversas fuentes, asegurando la integridad y precisión de los datos del torneo.
+
+#### 1. Datos de Uso de Armas
+Los datos de uso de armas, Kills y Deaths (`data/data.xlsx`) fueron recopilados manualmente por los organizadores del torneo. Se solicitó a los participantes que enviaran capturas de pantalla de sus armas utilizadas a través de un canal de Discord, las cuales fueron transcritas a una hoja de cálculo.
+
+![Proceso de recopilación de armas](images/Github-Images/recopilation-of-weapons.png)
+
+#### 2. Datos del Torneo (Brackets y Jugadores)
+La información sobre los brackets del torneo y los países de los participantes se extrajo de la página oficial del torneo en **Battlefy**, también proporcionada por los organizadores.
+
+![Bracket del torneo en Battlefy](images/Github-Images/bracket-battlefy.png)
+
+#### 3. Parámetros y Especificaciones de Armas
+Las especificaciones detalladas de cada arma (clase, arma secundaria, arma especial) se obtuvieron de la exhaustiva base de datos de Splatoon 3 mantenida por **Leanny**.
+- **Fuente:** [https://leanny.github.io/splat3/database.html](https://leanny.github.io/splat3/database.html)
+
+---
+
+## 🚀 Instrucciones para Ejecución Local
+
+Si deseas ejecutar esta aplicación en tu propia máquina, sigue estos pasos:
+
+1.  **Clonar el repositorio:**
+    ```bash
+    git clone https://github.com/cperezfl/smogon-starlight.git
+    ```
+
+2.  **Navegar al directorio del proyecto:**
+    ```bash
+    cd smogon-starlight
+    ```
+
+3.  **(Recomendado) Crear y activar un entorno virtual:**
+    - En Windows:
+      ```bash
+      python -m venv venv
+      .\venv\Scripts\activate
+      ```
+    - En macOS y Linux:
+      ```bash
+      python3 -m venv venv
+      source venv/bin/activate
+      ```
+
+4.  **Instalar las dependencias necesarias:**
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+5.  **Ejecutar la aplicación Streamlit:**
+    ```bash
+    streamlit run Starlight_App.py
+    ```
+
+Una vez ejecutado el último comando, la aplicación se abrirá automáticamente en tu navegador web.
