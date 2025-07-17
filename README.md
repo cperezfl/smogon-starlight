@@ -71,10 +71,11 @@ Se abrirá una nueva pestaña en tu navegador con la aplicación funcionando.
 │   ├── data_loader.py      # Lógica para cargar datos
 │   ├── ui.py               # Componentes de UI reutilizables
 │   └── viz.py              # Lógica para crear visualizaciones
-├── data/                   # (Carpeta para tus archivos .xlsx)
-├── images/                 # (Carpeta para tus imágenes .png, .jpg)
-├── videos/                 # (Carpeta para tus videos .mp4)
+├── data/                   # (Carpeta para archivos .xlsx)
+├── images/                 # (Carpeta para imágenes .png, .jpg)
+├── videos/                 # (Carpeta para videos .mp4)
 ├── requirements.txt        # Dependencias de Python
 ├── .gitignore              # Archivos a ignorar por Git
 └── README.md               # Este archivo
+└── LICENSE.md              # Licencia del programa
 ```
