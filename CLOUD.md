@@ -1,4 +1,4 @@
-Ingresa a este link para ver el Streamlit en la nube: https://smogon-starlight.streamlit.app/ 
+Ingresa a este link para ver el Streamlit en la nube: [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://smogon-starlight.streamlit.app/)
 
 (Debería verse como la imagen de abajo)
 
