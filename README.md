@@ -84,7 +84,7 @@ Si deseas ejecutar esta aplicación en tu propia máquina, sigue estos pasos:
 
 2.  **Navegar al directorio del proyecto:**
     ```bash
-    cd smogon-starlight
+    cd /tu-directorio-smogon-starlight
     ```
 
 3.  **(Recomendado) Crear y activar un entorno virtual:**
@@ -106,7 +106,7 @@ Si deseas ejecutar esta aplicación en tu propia máquina, sigue estos pasos:
 
 5.  **Ejecutar la aplicación Streamlit:**
     ```bash
-    streamlit run Starlight_App.py
+    streamlit run 0_Bienvenida.py
     ```
 
-Una vez ejecutado el último comando, la aplicación se abrirá automáticamente en tu navegador web.
+Una vez ejecutado el último comando, la aplicación se abrirá automáticamente en tu navegador web para ejecutarse de manera local.
