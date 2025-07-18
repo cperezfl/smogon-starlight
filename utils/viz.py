@@ -41,7 +41,6 @@ color_clases = {
 color_manager = ColorManager(color_clases, variation_strength=0.15, brighten_only=True)
 
 def encode_image_to_base64(imagepath):
-    # Asegúrate de que la ruta existe antes de intentar abrirla
     if not imagepath or not os.path.exists(imagepath):
         return None
     with open(imagepath, "rb") as img_file:
@@ -732,8 +731,6 @@ def create_podium_chart(df, title="", idioma="Español"):
 
     # Escala proporcional lineal
     bar_values = (max_rank - top_teams['Standing'] + 1) / max_rank
-    # O para suavizar diferencias, puedes usar esta línea en lugar de la anterior:
-    # bar_values = np.sqrt(bar_values)
 
     fig = go.Figure(go.Bar(
         x=bar_values,
@@ -890,9 +887,7 @@ def crear_grafico_progresion(progresiones_df, titulo_es, titulo_en, colores_equi
     if not progresiones_df.empty:
         max_rank = int(progresiones_df['Rank'].max())
         # Crear tickvals para eje Y, con un paso de 1 desde 1 hasta max_rank
-        tickvals = list(range(1, max_rank + 1))
-
-        # Ajustar ticktext para posicionar los 3 primeros más juntos (opcional, ejemplo)
+        tickvals = list(range(1, max_rank + 1)))
         # Aquí simplemente dejamos los ticks iguales pero invertidos
         fig.update_yaxes(
             autorange="reversed",
