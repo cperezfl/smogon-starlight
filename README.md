@@ -36,7 +36,7 @@ El objetivo de este proyecto es proporcionar una herramienta visual para que los
 ├── pages/ # Páginas desplegables
 │   ├── 1_Tourney.py            # Torneo General
 │   ├── 2_Weapon_Stats.py       # Estadísticas de Armas
-│   ├── 3_Team_Stats.py         # PEstadísticas de Equipos
+│   ├── 3_Team_Stats.py         # Estadísticas de Equipos
 │   ├── 4_About_Us.py           # Sobre Nosotros
 ├── utils/                  # Módulos de utilidad
 │   ├── __init__.py
